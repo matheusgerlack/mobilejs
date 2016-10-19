@@ -4,8 +4,7 @@
   //build overlay
   $menuOverlay = $('<div class="menu-overlay"></div>');
 
-  //apend menu to overlay
-  $(".nav-mobile").appendTo($menuOverlay);
+ 
   //add close button to overlay
   $('#close-menu').appendTo($menuOverlay);
 
@@ -17,6 +16,10 @@
 
 //show mobile navigation when click the button
 $("#bars-menu").click(function(event){
+  
+  //unhide/apend menu to overlay
+  $(".nav").show();
+  $(".nav").appendTo($menuOverlay);
 
   event.preventDefault();
   $menuOverlay.fadeIn('slow');
