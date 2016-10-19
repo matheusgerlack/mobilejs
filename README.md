@@ -3,7 +3,7 @@ Mobile Overlay Menu with minimalist design
 
 ## Usage
 
-* Create an extra navigation of a class `nav-mobile`.
+* Add to your navigation a class of `nav`.
 
 * Add the Menu Icon and the Mobile Menu to your main nav.
 
