@@ -1,7 +1,5 @@
 (function($) {
 
- console.log('opa');
-
 //attach overlay to the page
   //build overlay
   $menuOverlay = $('<div class="menu-overlay"></div>');
