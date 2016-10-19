@@ -4,7 +4,8 @@
   //build overlay
   $menuOverlay = $('<div class="menu-overlay"></div>');
 
- 
+  //apend menu to overlay
+
   //add close button to overlay
   $('#close-menu').appendTo($menuOverlay);
 
@@ -15,15 +16,14 @@
 //CSS
 
 //show mobile navigation when click the button
-$("#bars-menu").click(function(event){
-  
-  //unhide/apend menu to overlay
-  $(".nav").show();
-  $(".nav").appendTo($menuOverlay);
+$("#bars-menu").on('click',function(event){
 
   event.preventDefault();
+
+  $(".nav-public").clone().appendTo($menuOverlay);
+  $(".menu-overlay .nav-public").show();
   $menuOverlay.fadeIn('slow');
-  $('#bars-menu').fadeOut('slow'); 
+  //$('#bars-menu').fadeOut('slow'); 
 
 });
 
@@ -34,11 +34,10 @@ $("#bars-menu").click(function(event){
 //pending
 
 //close navigation
-$("#close-menu").click(function(event){
+$("#close-menu").on('click',function(event){
 
   event.preventDefault();
-  $menuOverlay.fadeOut('medium');
-  $('#bars-menu').fadeIn('medium'); 
+  $menuOverlay.fadeOut('medium'); 
 
 });
 
