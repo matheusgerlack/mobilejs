@@ -32,3 +32,10 @@
 	height: 60px;
 	width: 60px;
 }
+
+//hide navigation - so we unhide in JS
+.nav{
+	@media (max-width: 768px){
+		display: none;	
+	}
+}
