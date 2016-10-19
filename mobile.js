@@ -5,7 +5,7 @@
   $menuOverlay = $('<div class="menu-overlay"></div>');
 
   //apend menu to overlay
-
+  $(".nav-public").clone().appendTo($menuOverlay);
   //add close button to overlay
   $('#close-menu').appendTo($menuOverlay);
 
@@ -19,8 +19,6 @@
 $("#bars-menu").on('click',function(event){
 
   event.preventDefault();
-
-  $(".nav-public").clone().appendTo($menuOverlay);
   $(".menu-overlay .nav-public").show();
   $menuOverlay.fadeIn('slow');
   //$('#bars-menu').fadeOut('slow'); 
